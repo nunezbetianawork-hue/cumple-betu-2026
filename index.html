@@ -10,7 +10,7 @@
 <meta name="theme-color" content="#8fdbdc">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,300;1,9..144,400&family=Yellowtail&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,300;1,9..144,400&family=Shrikhand&display=swap" rel="stylesheet">
 <style>
   :root{
     --aqua-1:#bff0ec; --aqua-2:#8fdbdc; --aqua-3:#5ec4cc; --aqua-deep:#2f9aa6;
@@ -51,7 +51,7 @@
   .intro{position:fixed;inset:0;z-index:30;cursor:pointer;transition:opacity 1s ease, visibility 1s}
   .intro.gone{opacity:0;visibility:hidden}
   .intro-copy{position:absolute;left:0;right:0;bottom:16%;text-align:center;color:#fff;padding:0 16px}
-  .intro-copy .script{font-family:"Yellowtail",cursive;font-size:52px;line-height:1;text-shadow:0 2px 18px rgba(30,110,120,.35)}
+  .intro-copy .script{font-family:"Shrikhand",cursive;font-style:normal;font-size:40px;line-height:1.15;text-shadow:0 2px 18px rgba(30,110,120,.35)}
   .pill{display:inline-block;margin-top:18px;background:rgba(255,255,255,.88);color:var(--aqua-deep);
     border-radius:999px;padding:11px 22px;font-size:14px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;
     box-shadow:0 8px 24px rgba(30,110,120,.18);animation:pulse 2.4s ease-in-out infinite}
@@ -68,7 +68,7 @@
     text-align:center;padding:0 16px 90px;color:#fff}
   .tag{display:inline-flex;gap:8px;align-items:center;background:var(--butter);color:#8a6a12;border-radius:999px;
     padding:8px 16px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;box-shadow:0 6px 18px rgba(30,110,120,.15)}
-  .hero h1{font-family:"Yellowtail",cursive;font-weight:400;font-size:132px;line-height:.95;margin:14px 0 6px;
+  .hero h1{font-family:"Shrikhand",cursive;font-style:normal;font-weight:400;font-size:100px;line-height:1.05;margin:14px 0 6px;
     text-shadow:0 4px 30px rgba(25,105,115,.35)}
   .hero .sub{font-family:"Fraunces",serif;font-style:italic;font-weight:400;font-size:28px;line-height:1.2;text-shadow:0 1px 3px rgba(20,95,105,.4),0 2px 14px rgba(25,105,115,.4)}
   .hero .why{margin-top:14px;font-size:16px;font-weight:400;max-width:300px;text-shadow:0 1px 3px rgba(20,95,105,.55),0 1px 14px rgba(20,95,105,.45)}
@@ -93,7 +93,7 @@
   .eyebrow{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--aqua-deep);font-weight:500}
   h2{font-family:"Fraunces",serif;font-weight:400;font-size:30px;line-height:1.15;margin-top:8px}
   h2 em{font-style:italic;color:var(--hibiscus)}
-  .script-accent{font-family:"Yellowtail",cursive;color:var(--hibiscus);font-size:40px;line-height:1}
+  .script-accent{font-family:"Shrikhand",cursive;font-style:normal;color:var(--hibiscus);font-size:32px;line-height:1}
 
   .when{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
   .tile{border-radius:22px;padding:18px 10px}
@@ -143,7 +143,7 @@
   .err{color:#c23f62;font-size:14px;text-align:center;min-height:20px}
 
   .thanks{padding:8px 0}
-  .thanks .big{font-family:"Yellowtail",cursive;font-size:58px;color:var(--hibiscus);line-height:1.1}
+  .thanks .big{font-family:"Shrikhand",cursive;font-style:normal;font-size:40px;color:var(--hibiscus);line-height:1.1}
   .thanks p{font-family:"Fraunces",serif;font-size:21px;margin-top:8px}
   .link{background:none;border:0;color:var(--ink-soft);text-decoration:underline;font-size:14px;margin-top:16px;cursor:pointer;font-family:inherit}
 
@@ -151,12 +151,12 @@
   .outro{position:relative;height:300px;overflow:hidden;margin-top:10px}
   .outro .shore{top:-1px;bottom:auto;transform:scaleY(-1)}
   .outro-copy{position:absolute;z-index:5;left:0;right:0;bottom:40px;text-align:center;color:#fff}
-  .outro-copy .script{font-family:"Yellowtail",cursive;font-size:44px;text-shadow:0 3px 18px rgba(25,105,115,.35)}
+  .outro-copy .script{font-family:"Shrikhand",cursive;font-style:normal;font-size:32px;text-shadow:0 3px 18px rgba(25,105,115,.35)}
   .outro-copy small{display:block;font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;text-shadow:0 1px 6px rgba(20,95,105,.5)}
 
   .burst{position:fixed;z-index:40;pointer-events:none;width:22px;height:22px}
 
-  @media (max-width:380px){ .hero h1{font-size:112px} .cd{min-width:70px} .card{padding:30px 18px} h2{font-size:27px} }
+  @media (max-width:380px){ .hero h1{font-size:88px} .cd{min-width:70px} .card{padding:30px 18px} h2{font-size:27px} }
   @media (prefers-reduced-motion:reduce){ *,*:before,*:after{animation:none!important;transition:none!important} }
 </style>
 </head>
