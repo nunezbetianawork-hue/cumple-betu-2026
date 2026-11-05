@@ -145,6 +145,8 @@
   .thanks{padding:8px 0}
   .thanks .big{font-family:"Shrikhand",cursive;font-style:normal;font-size:40px;color:var(--hibiscus);line-height:1.1}
   .thanks p{font-family:"Fraunces",serif;font-size:21px;margin-top:8px}
+  .thanks .pay{display:inline-block;margin-top:16px;background:var(--blush);color:#a3304f;border-radius:16px;padding:10px 16px;
+    font-family:"DM Sans",sans-serif;font-size:15px;font-weight:400;line-height:1.4}
   .link{background:none;border:0;color:var(--ink-soft);text-decoration:underline;font-size:14px;margin-top:16px;cursor:pointer;font-family:inherit}
 
   /* ---------- pie ---------- */
@@ -335,6 +337,7 @@
     <div class="thanks hide" id="thanks">
       <div class="big" id="thanksTitle">¡Gracias!</div>
       <p id="thanksTxt"></p>
+      <p class="pay hide" id="payNote">Pequeña aclaración: cada uno se paga lo que come y toma 💕</p>
       <button class="link" id="again" type="button">Cambiar mi respuesta</button>
     </div>
 
@@ -466,8 +469,10 @@ function showThanks(d, celebrate){
   if (d.asiste === "Sí"){
     thanksTitle.textContent = "¡Nos vemos!";
     thanksTxt.textContent = d.personas > 1 ? `Anoté ${d.personas} lugares a nombre de ${d.nombre}. Te espero el viernes a las 20 h.` : `Te guardo tu lugar, ${d.nombre.split(" ")[0]}. Te espero el viernes a las 20 h.`;
+    document.getElementById("payNote").classList.remove("hide");
     if (celebrate) burst();
   } else {
+    document.getElementById("payNote").classList.add("hide");
     thanksTitle.textContent = "¡Gracias por avisar!";
     thanksTxt.textContent = "Te voy a extrañar. Brindamos a la vuelta 🥂";
   }
